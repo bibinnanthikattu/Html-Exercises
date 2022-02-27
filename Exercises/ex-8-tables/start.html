@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Lezione HTML</title>
+    <title>Tables</title>
+    <style>
+        table {
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+        tr ,th,td {
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <table>
+        <caption>Invoice</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Entry</th>
+                <th>Exit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>10</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>35</td>
+                <td>35</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>
