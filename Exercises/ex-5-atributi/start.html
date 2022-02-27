@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Lezione HTML</title>
+    <title>Attributes</title>
 </head>
 
 <body>
-
+    <form action="">
+        <section>
+            <p>Choose your category</p>
+            <div><input type="checkbox" id="no." name="no." checked>
+            <label for="no.">Numbers</label>
+            <br>
+            <input type="checkbox" id="date" name="date">
+            <label for="date">Date</label>
+        </div>
+        <div>
+            <label for="numbers">Choose your number from 0 to 100 : </label>
+            <input type="number" id="numbers" name="numbers" min="0" max="100" step="2" autofocus>
+        </div>
+        <label for="dates">Date : </label>
+        <input type="date" id="dates" name="dates" min="2022-1-1" max="2022-12-31">
+        <div><button type="button" disabled>Try Now</button></div>
+        </section>
+    </form>
 </body>
 
 </html>
